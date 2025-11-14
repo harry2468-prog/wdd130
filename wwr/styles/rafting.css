@@ -1,134 +1,101 @@
-/* -------------------------------------
-   CSS VARIABLES (Choose your color palette)
--------------------------------------- */
-:root {
-    --primary-color: #003366;
-    --secondary-color: #005f99;
-    --accent1-color: #222222;
-    --accent2-color: #ffffff;
-
-    --heading-font: 'Georgia', serif;
-    --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* -------------------------------------
-    UNIVERSAL RESET
--------------------------------------- */
+/* Universal reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* -------------------------------------
-    BODY STYLING
--------------------------------------- */
+/* CSS Variables */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #005f99;
+    --accent1-color: #222222;
+    --accent2-color: #ffffff;
+    --heading-font: 'Georgia', serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: var(--accent2-color);
 }
 
-/* -------------------------------------
-    PAGE WIDTH & CENTERING
--------------------------------------- */
+/* Layout */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-/* -------------------------------------
-    HEADINGS
--------------------------------------- */
+/* Headings */
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    margin-bottom: 10px;
 }
 
-/* -------------------------------------
-    TEXT & SPACING
--------------------------------------- */
-nav, p, section, article {
+/* Basic spacing */
+nav, p, section, article, form {
     margin: 16px;
     padding: 8px;
 }
 
-/* -------------------------------------
-    NAVIGATION
--------------------------------------- */
-nav a {
-    margin-right: 15px;
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--primary-color);
-}
-
-/* -------------------------------------
-    SOCIAL MEDIA LINKS (remove underline)
--------------------------------------- */
-.socialmedia a {
-    text-decoration: none;
-}
-
-/* -------------------------------------
-    HERO SECTION
--------------------------------------- */
+/* Hero section */
 .hero {
     position: relative;
-    height: 300px;
-    background-image: url('../images/raftingcruise.PNG'); /* can change to another hero image */
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    margin-top: 20px;
+    margin-bottom: 32px;
+    height: 400px;
+    background-color: var(--secondary-color);
+    padding: 16px;
 }
 
-.hero-text {
+.hero h1 {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.8rem;
-    border-radius: 5px;
+    top: 16px;
+    left: 16px;
+    font-size: 2rem;
+    color: var(--accent2-color);
 }
 
-/* -------------------------------------
-    FORM STYLING (for contact page)
--------------------------------------- */
+.hero article {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    width: 80%;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 16px;
+    width: 300px;
+}
+
+/* Footer social media */
+.socialmedia a {
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Form styles */
 input, textarea {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #777;
-    border-radius: 4px;
+    margin-bottom: 12px;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 8px 16px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent2-color);
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
     background-color: var(--secondary-color);
-}
-
-/* -------------------------------------
-    FOOTER
--------------------------------------- */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    color: var(--primary-color);
 }
