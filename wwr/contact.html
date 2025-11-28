@@ -8,69 +8,130 @@
     <meta name="author" content="Hendrick T. Chikwanha">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
 
-    <!-- Header -->
+    <!-- Header / Navigation -->
     <header>
-        <img src="images/raftinglogo.png" alt="Rafting Logo" width="120">
+        <img src="images/raftinglogo.png" alt="Rafting Logo">
         <nav>
-            <a href="../index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
-            <a class="active" href="contact.html">Contact Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
         </nav>
     </header>
 
     <main>
 
-        <!-- Company Contact Info -->
+        <h1>Contact Us | Whitewater Rafting Adventures</h1>
+
+        <!-- Company Info Section -->
         <section class="contact-info">
-            <h2>White Water Rafting Company</h2>
-            <p>
-                123 Main River Street<br>
-                Kolob, California<br>
-                +1 999 999 9999<br>
-                info@whitewater.com
-            </p>
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 123 River Run Road, Boise, ID 83701</p>
+            <p><strong>Phone:</strong> (208) 555-1234</p>
+            <p><strong>Email:</strong> info@wwrrafting.com</p>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.885216156987!2d-116.2023!3d43.6150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae566f1cbbf0bb%3A0x7f0214e9f48a5ad!2sBoise%20River!5e0!3m2!1sen!2sus!4v1700000000000"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
         </section>
 
-        <!-- MAP AND FORM LAYOUT -->
-        <section class="contact-container">
+        <!-- Get in Touch Button -->
+        <section class="get-in-touch">
+            <button type="button" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'});">
+                Get in Touch
+            </button>
+        </section>
 
-            <!-- Map Placeholder (left) -->
-            <div class="map-box"></div>
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
 
-            <!-- Form (right) -->
-            <form action="#" method="post" class="contact-form">
+            <form id="contact-form">
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Placeholder" required>
+                <!-- Name -->
+                <label for="fullname">Your Name</label>
+                <input type="text" id="fullname" name="fullname" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Placeholder" required>
+                <!-- Email -->
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
 
-                <label>Message Purpose</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="purpose"> General Inquiry</label>
-                    <label><input type="radio" name="purpose"> Reservation Question</label>
-                    <label><input type="radio" name="purpose"> Website Suggestion</label>
-                </div>
+                <!-- Purpose of Message -->
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+                    <label for="purpose1">
+                        <input type="radio" id="purpose1" name="purpose" value="General Inquiry" required>
+                        General Inquiry
+                    </label>
+                    <label for="purpose2">
+                        <input type="radio" id="purpose2" name="purpose" value="Reservation Question">
+                        Reservation Question
+                    </label>
+                    <label for="purpose3">
+                        <input type="radio" id="purpose3" name="purpose" value="Website Suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
 
+                <!-- Message -->
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Type here..." rows="6" required></textarea>
+                <textarea id="message" name="message" required></textarea>
 
-                <label class="newsletter">
-                    <input type="checkbox"> Please subscribe me to the monthly newsletter
+                <!-- Newsletter Subscription -->
+                <label for="subscribe" class="checkbox-label">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
                 </label>
 
-                <button type="submit" class="submit-btn">Get in Touch!</button>
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
 
             </form>
-
         </section>
 
-        <!-- Bottom Title -->
-        <h2 class="serve-title">We Are Here to Serve You</h2>
+        <!-- Employee Profiles Section -->
+        <section class="employee-profiles">
+            <h2>We are here to serve you</h2>
+
+            <div class="employee-row">
+                <!-- Employee 1 -->
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Johnson — Head River Guide">
+                    <figcaption>
+                        <strong>Sarah Johnson</strong><br>
+                        Head River Guide<br>
+                        Expert in safe river rafting and customer experience, ensuring thrilling yet secure trips aligned with our mission.
+                    </figcaption>
+                </figure>
+
+                <!-- Employee 2 -->
+                <figure>
+                    <img src="images/employee2.jpg" alt="Mike Thompson — Safety Officer">
+                    <figcaption>
+                        <strong>Mike Thompson</strong><br>
+                        Safety Officer<br>
+                        Oversees all safety protocols and emergency readiness, guaranteeing high standards for participant safety.
+                    </figcaption>
+                </figure>
+
+                <!-- Employee 3 -->
+                <figure>
+                    <img src="images/employee3.jpg" alt="Ana Martinez — Customer Support">
+                    <figcaption>
+                        <strong>Ana Martinez</strong><br>
+                        Customer Support Specialist<br>
+                        Dedicated to assisting customers before, during, and after trips, reflecting our commitment to exceptional service.
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
     </main>
 
