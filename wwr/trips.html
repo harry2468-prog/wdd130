@@ -4,37 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips | Whitewater Rafting Adventures</title>
-    <meta name="description" content="Discover our exciting whitewater rafting trips and the equipment we provide for a safe adventure.">
+    <meta name="description" content="Explore our exciting whitewater rafting trips, including beginner, intermediate, and advanced river adventures. Book your next unforgettable experience!">
     <meta name="author" content="Hendrick T. Chikwanha">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
+
     <!-- Header -->
     <header>
         <img src="images/raftinglogo.png" alt="Rafting Logo" width="120">
         <nav>
             <a href="../index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
+            <a href="trips.html" aria-current="page">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <section>
-            <h2>Our Trips</h2>
-            <p>We offer a variety of trips ranging from beginner-friendly calm waters to advanced whitewater challenges. All trips include professional guides, life jackets, and safety briefings.</p>
-            <article>
-                <img src="images/raftingcruise.png" alt="People rafting">
-                <p>Join us for a half-day or full-day adventure with breathtaking scenery and thrilling rapids.</p>
-            </article>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <h1>Choose Your Next Adventure</h1>
+            <p>Ready for the thrill of a lifetime? Explore our rafting trips below and contact us to book your adventure today!</p>
+            <a class="cta-button" href="contact.html">Book Your Trip Now</a>
         </section>
 
-        <section>
-            <h2>Equipment</h2>
-            <p>We provide top-quality rafts, paddles, helmets, and life jackets. Our guides ensure everyone has the proper safety gear before starting the trip.</p>
+        <!-- Trip Descriptions -->
+        <section class="trip-descriptions">
+            <h2>Our Most Popular Trips</h2>
+
+            <div class="trip-grid">
+
+                <figure class="trip-card">
+                    <img src="images/adventure1.png" alt="Beginner Rafting Trip">
+                    <figcaption>
+                        <h3>Beginner River Float</h3>
+                        <p>A relaxing 2–3 hour scenic float perfect for families and first-time rafters. Calm waters and gentle rapids make this a safe and enjoyable introduction to rafting.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="trip-card">
+                    <img src="images/adventure3.png" alt="Intermediate Rafting Adventure">
+                    <figcaption>
+                        <h3>Intermediate Rapids Adventure</h3>
+                        <p>Our most popular half-day trip! Features class II–III rapids, beautiful canyon views, and fun wave trains. Great for groups seeking excitement without extreme intensity.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="trip-card">
+                    <img src="images/adventure4.png" alt="Advanced Whitewater Challenge">
+                    <figcaption>
+                        <h3>Advanced Whitewater Challenge</h3>
+                        <p>A full-day experience for thrill seekers! Conquer class IV–V rapids with our expert guides. Includes lunch and safety equipment. Prior rafting experience recommended.</p>
+                    </figcaption>
+                </figure>
+
+            </div>
         </section>
+
+        <!-- Trips Table -->
+        <section class="trip-table-section">
+            <h2>All Available Trips</h2>
+
+            <table class="trip-table">
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Difficulty Level</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                        <th>Age Requirement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beginner River Float</td>
+                        <td>Easy</td>
+                        <td>2–3 Hours</td>
+                        <td>$50</td>
+                        <td>5+ Years</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate Rapids Adventure</td>
+                        <td>Moderate</td>
+                        <td>4 Hours</td>
+                        <td>$120</td>
+                        <td>10+ Years</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Whitewater Challenge</td>
+                        <td>Difficult</td>
+                        <td>Full Day</td>
+                        <td>$220</td>
+                        <td>16+ Years</td>
+                    </tr>
+                    <tr>
+                        <td>Sunset Scenic Cruise</td>
+                        <td>Easy</td>
+                        <td>2 Hours</td>
+                        <td>$70</td>
+                        <td>All Ages</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -46,5 +122,6 @@
             <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
         </nav>
     </footer>
+
 </body>
 </html>

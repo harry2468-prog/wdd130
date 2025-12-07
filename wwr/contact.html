@@ -1,149 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Whitewater Rafting Adventures</title>
-    <meta name="description" content="Contact Whitewater Rafting Adventures for inquiries, questions, or to book your rafting adventure.">
-    <meta name="author" content="Hendrick T. Chikwanha">
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
+<section class="employee-profiles">
+    <h2>We are here to serve you</h2>
 
-<body>
+    <div class="employee-row">
 
-    <!-- Header / Navigation -->
-    <header>
-        <img src="images/raftinglogo.png" alt="Rafting Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html" class="active">Contact Us</a>
-        </nav>
-    </header>
+        <!-- Employee 1 -->
+        <figure>
+            <img src="images/employee1.jpg" alt="Sarah Johnson — Head River Guide" class="person-img">
+            <figcaption>
+                <strong>Sarah Johnson</strong><br>
+                Head River Guide<br>
+                Expert in safe river rafting and customer experience, ensuring thrilling yet secure trips aligned with our mission.
+            </figcaption>
+        </figure>
 
-    <main>
+        <!-- Employee 2 -->
+        <figure>
+            <img src="images/employee2.jpg" alt="Mike Thompson — Safety Officer" class="person-img">
+            <figcaption>
+                <strong>Mike Thompson</strong><br>
+                Safety Officer<br>
+                Oversees all safety protocols and emergency readiness, guaranteeing high standards for participant safety.
+            </figcaption>
+        </figure>
 
-        <h1>Contact Us | Whitewater Rafting Adventures</h1>
+        <!-- Employee 3 -->
+        <figure>
+            <img src="images/employee3.jpg" alt="Ana Martinez — Customer Support" class="person-img">
+            <figcaption>
+                <strong>Ana Martinez</strong><br>
+                Customer Support Specialist<br>
+                Dedicated to assisting customers before, during, and after trips, reflecting our commitment to exceptional service.
+            </figcaption>
+        </figure>
 
-        <!-- Company Info Section -->
-        <section class="contact-info">
-            <h2>Company Information</h2>
-            <p><strong>Address:</strong> 123 River Run Road, Boise, ID 83701</p>
-            <p><strong>Phone:</strong> (208) 555-1234</p>
-            <p><strong>Email:</strong> info@wwrrafting.com</p>
-
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.885216156987!2d-116.2023!3d43.6150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae566f1cbbf0bb%3A0x7f0214e9f48a5ad!2sBoise%20River!5e0!3m2!1sen!2sus!4v1700000000000"
-                    allowfullscreen
-                    loading="lazy">
-                </iframe>
-            </div>
-        </section>
-
-        <!-- Get in Touch Button -->
-        <section class="get-in-touch">
-            <button type="button" onclick="document.getElementById('contact-form').scrollIntoView({behavior:'smooth'});">
-                Get in Touch
-            </button>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
-
-            <form id="contact-form">
-
-                <!-- Name -->
-                <label for="fullname">Your Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-
-                <!-- Email -->
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <!-- Purpose of Message -->
-                <fieldset>
-                    <legend>Purpose of Message</legend>
-                    <label for="purpose1">
-                        <input type="radio" id="purpose1" name="purpose" value="General Inquiry" required>
-                        General Inquiry
-                    </label>
-                    <label for="purpose2">
-                        <input type="radio" id="purpose2" name="purpose" value="Reservation Question">
-                        Reservation Question
-                    </label>
-                    <label for="purpose3">
-                        <input type="radio" id="purpose3" name="purpose" value="Website Suggestion">
-                        Website Suggestion
-                    </label>
-                </fieldset>
-
-                <!-- Message -->
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <!-- Newsletter Subscription -->
-                <label for="subscribe" class="checkbox-label">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter
-                </label>
-
-                <!-- Submit Button -->
-                <button type="submit">Send Message</button>
-
-            </form>
-        </section>
-
-        <!-- Employee Profiles Section -->
-        <section class="employee-profiles">
-            <h2>We are here to serve you</h2>
-
-            <div class="employee-row">
-                <!-- Employee 1 -->
-                <figure>
-                    <img src="images/employee1.jpg" alt="Sarah Johnson — Head River Guide">
-                    <figcaption>
-                        <strong>Sarah Johnson</strong><br>
-                        Head River Guide<br>
-                        Expert in safe river rafting and customer experience, ensuring thrilling yet secure trips aligned with our mission.
-                    </figcaption>
-                </figure>
-
-                <!-- Employee 2 -->
-                <figure>
-                    <img src="images/employee2.jpg" alt="Mike Thompson — Safety Officer">
-                    <figcaption>
-                        <strong>Mike Thompson</strong><br>
-                        Safety Officer<br>
-                        Oversees all safety protocols and emergency readiness, guaranteeing high standards for participant safety.
-                    </figcaption>
-                </figure>
-
-                <!-- Employee 3 -->
-                <figure>
-                    <img src="images/employee3.jpg" alt="Ana Martinez — Customer Support">
-                    <figcaption>
-                        <strong>Ana Martinez</strong><br>
-                        Customer Support Specialist<br>
-                        Dedicated to assisting customers before, during, and after trips, reflecting our commitment to exceptional service.
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Whitewater Rafting Adventures | Hendrick T. Chikwanha</p>
-        <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-        </nav>
-    </footer>
-
-</body>
-</html>
+    </div>
+</section>
